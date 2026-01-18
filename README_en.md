@@ -119,13 +119,18 @@ If automatic download fails or you prefer manual installation:
 3. Manually place the files in the adb-switch directory:
 
 ```bash
-# For latest version
-mkdir -p ~/.adb-switch-windows/adb/platform-tools-latest-windows
+# For latest version (ADB_DIR defaults to ~/.adb-switch-windows/adb)
+mkdir -p $ADB_DIR/platform-tools-latest-windows
 # Copy all files from extracted platform-tools/ to this directory
 
 # For specific version (e.g., r33.0.1)
-mkdir -p ~/.adb-switch-windows/adb/platform-tools-r33.0.1-windows
+mkdir -p $ADB_DIR/platform-tools-r33.0.1-windows
 # Copy all files from extracted platform-tools/ to this directory
+```
+
+**Note:** `ADB_DIR` is the path you specified during installation (via `make install ADB_DIR=/path`), which defaults to `~/.adb-switch-windows/adb`. You can check your configured path with:
+```bash
+grep ADB_DIR ~/.adb-switch-windows/config
 ```
 
 4. Verify installation:

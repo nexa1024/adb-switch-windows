@@ -119,13 +119,18 @@ adb-switch install platform-tools-r34.0.5-windows
 3. 手动将文件放入 adb-switch 目录：
 
 ```bash
-# 对于最新版本
-mkdir -p ~/.adb-switch-windows/adb/platform-tools-latest-windows
+# 对于最新版本（ADB_DIR 默认为 ~/.adb-switch-windows/adb）
+mkdir -p $ADB_DIR/platform-tools-latest-windows
 # 将解压后的 platform-tools/ 中的所有文件复制到此目录
 
 # 对于特定版本（例如 r33.0.1）
-mkdir -p ~/.adb-switch-windows/adb/platform-tools-r33.0.1-windows
+mkdir -p $ADB_DIR/platform-tools-r33.0.1-windows
 # 将解压后的 platform-tools/ 中的所有文件复制到此目录
+```
+
+**注意：** `ADB_DIR` 是您安装时指定的路径（通过 `make install ADB_DIR=/path`），默认为 `~/.adb-switch-windows/adb`。您可以通过以下命令查看当前配置的路径：
+```bash
+grep ADB_DIR ~/.adb-switch-windows/config
 ```
 
 4. 验证安装：
