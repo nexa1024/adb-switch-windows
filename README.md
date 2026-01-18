@@ -2,7 +2,7 @@
 
 一个用于在 Windows 上管理和切换多个 ADB (Android Debug Bridge) 版本的工具。
 
-[English](README.md) | 简体中文
+[English Version](README_en.md) | 简体中文
 
 ## ⚠️ 重要提示
 

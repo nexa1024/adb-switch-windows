@@ -2,7 +2,7 @@
 
 A tool for managing and switching between multiple ADB (Android Debug Bridge) versions on Windows.
 
-English | [简体中文](README_zh.md)
+English | [简体中文](README.md)
 
 ## ⚠️ Important Notice
 
