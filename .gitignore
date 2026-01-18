@@ -1,0 +1,6 @@
+*.zip
+platform-tools/
+.DS_Store
+*.swp
+*.swo
+*~

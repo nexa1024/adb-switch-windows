@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make:*)",
+      "Bash(~/.adb-switch-windows/bin/adb-switch:*)",
+      "Bash(chmod:*)",
+      "Bash(tee:*)",
+      "Bash([:*)",
+      "Bash(bash:*)",
+      "Bash(source:*)",
+      "Bash(adb-switch:*)",
+      "Bash(~/.adb-switch-windows/bin/adb.exe:*)",
+      "Bash(/c/Users/89504/.adb-switch-windows/bin/adb.exe:*)",
+      "Bash(~/.adb-switch-windows/bin/adb.exe.real:*)",
+      "Bash(./adb.exe:*)",
+      "Bash(for:*)",
+      "Bash(do echo:*)",
+      "Bash(curl:*)",
+      "Bash(done)",
+      "Bash(ls:*)"
+    ]
+  }
+}
